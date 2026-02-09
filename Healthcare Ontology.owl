@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/healthcare"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/healthcare">
+    <Prefix name="" IRI="http://www.semanticweb.org/healthcare#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>
+            Ontology describing clinical healthcare concepts including patients,
+            medical staff, diagnoses, treatments, and healthcare facilities.
+        </Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Healthcare Clinical Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>1.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Appointment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Department"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diagnosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthcareProfessional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaboratoryTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedicalRecord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nurse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surgery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Treatment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#attendsAppointment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToHospital"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#conductsTest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#diagnosedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAppointment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDepartment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDiagnosis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDisease"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDoctor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMedicalRecord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNurse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPatient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTestResult"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performsSurgery"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#prescribesMedication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#prescribesTreatment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#recordsDiagnosis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#undergoesTreatment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksAt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAppointmentDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDepartmentName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDiagnosisDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDoctorID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDosage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEmail"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHospitalName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLicenseNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMedicalNotes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMedicationName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPatientID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasResultDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSeverity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTestName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTestValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTreatmentEndDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTreatmentStartDate"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#author"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#creationDate"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#source"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Doctor"/>
+        <Class IRI="#HealthcareProfessional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthcareProfessional"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nurse"/>
+        <Class IRI="#HealthcareProfessional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surgery"/>
+        <Class IRI="#Treatment"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
