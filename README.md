@@ -67,15 +67,4 @@ Examples:
 - `hasDosage`
 - `hasTestValue`
 
-### Annotation Properties
-
-Annotation properties are used to store metadata about the ontology and the exam submission, including:
-- author information
-- course name
-- professor name
-- academic year
-- versioning details
-
-
-This project is intended for **academic and educational purposes only**.
 
